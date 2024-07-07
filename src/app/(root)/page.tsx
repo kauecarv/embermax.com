@@ -9,10 +9,11 @@ import { WiStars } from "react-icons/wi";
 import Features from "./features-section/features";
 import Product from "./product-section/product";
 import { TbShield } from "react-icons/tb";
-import Reviews from "./reviews-section/Reviews";
+
 import Footer from "../components/Footer";
 import ContactUs from "./contact-section/page";
 import { Reveal } from "../components/motion/RevealScroll";
+import Reviews from "./reviews-section/reviews";
 
 export default function Home() {
   return (
