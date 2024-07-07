@@ -9,7 +9,7 @@ const ContaPedidos = () => {
   return (
     <>
       <div className="bg-black w-full max-h-fit h-screen flex flex-col lg:flex-row   gap-5 px-3 md:px-16 lg:px-28 lg:py-16 md:flex-row text-[#161931]">
-      <Reveal>
+   
       <aside className="mx-auto py-4 md:w-1/3 lg:w-1/4 md:block">
           <div className="sticky flex flex-col gap-2 p-4 text-sm border-2 bg-[#111111] border-[#222] rounded-xl top-12">
             <h2 className="pl-3 mb-4 text-2xl font-semibold font-dmsans text-white">
@@ -37,8 +37,7 @@ const ContaPedidos = () => {
             </a>
           </div>
         </aside>
-      </Reveal>
-       <Reveal>
+  
        <div className="flex flex-col w-full py-6">
           <div className="-m-1.5 overflow-x-auto">
             <div className="p-1.5 min-w-full inline-block align-middle">
@@ -131,7 +130,7 @@ const ContaPedidos = () => {
             </div>
           </div>
         </div>
-       </Reveal>
+    
       </div>
     </>
   );

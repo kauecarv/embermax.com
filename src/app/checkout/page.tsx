@@ -49,7 +49,7 @@ const Checkout = () => {
             </div>
           </div>
           <div className="flex flex-col">
-            <div className="flex flex-wrap items-center gap-2 lg:px-8">
+            <div className="flex flex-wrap items-center gap-2 lg:px-2">
               <div className="relative w-full max-w-md h-64 overflow-hidden group rounded-sm transition duration-300 hover:scale-95">
                 <img
                   className="object-cover w-full max-h-56 rounded-xl"

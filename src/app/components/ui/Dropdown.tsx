@@ -60,7 +60,7 @@ const DropdownNav = () => {
               <RiUserSearchLine className="text-red-500 text-2xl"/> Minha Conta
             </Link>
             <Link
-              href="/meus-pedidos"
+              href="/conta/pedidos"
           className="flex items-center gap-3 font-dmsans w-48 font-bold px-4 py-3 rounded-xl  text-md text-white transition duration-300 hover:bg-[#171717] hover:scale-105 group"
               role="menuitem"
             >

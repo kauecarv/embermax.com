@@ -10,7 +10,7 @@ const Conta = () => {
   return (
     <>
       <div className="bg-black w-full flex flex-col lg:flex-row   gap-5 px-3 md:px-16 lg:px-28 lg:py-16 md:flex-row text-[#161931]">
-     <Reveal>
+
      <aside className="mx-auto py-4 md:w-1/3 lg:w-1/4 md:block">
           <div className="sticky flex flex-col gap-2 p-4 text-sm border-2 bg-[#111111] border-[#222] rounded-xl top-12">
             <h2 className="pl-3 mb-4 text-2xl font-semibold font-dmsans text-white">
@@ -39,8 +39,7 @@ const Conta = () => {
             </a>
           </div>
         </aside>
-     </Reveal>
-      <Reveal>
+
       <main className="w-full min-h-screen bg-[#111111] rounded-xl py-1 md:w-2/3 lg:w-3/4">
           <div className="p-2 md:p-4">
             <div className="w-full px-6 pb-8 mt-8 sm:max-w-xl sm:rounded-lg">
@@ -155,7 +154,7 @@ const Conta = () => {
             </div>
           </div>
         </main>
-      </Reveal>
+ 
       </div>
     </>
   );
