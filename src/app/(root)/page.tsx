@@ -91,7 +91,7 @@ export default function Home() {
                   {/* Left Side Image */}
                   <div className="absolute -left-12 top-36 transform -translate-y-1/2 z-50 opacity-100">
                     <img
-                      src="https://images-ext-1.discordapp.net/external/pUc-b8PpxyN8fVbGGrO75MX-F_GoxA8xuC9o_p_SnNg/https/cdn.prod.website-files.com/65fb10cecbf4fc38c013b91a/65fdd99ae279671e66182c7c_power-your-ideas-through-ai-bottom-left-image-intellitech-x-webflow-template-p-500.png?format=webp&quality=lossless&width=404&height=566"
+                      src="/banner/cardmax.png"
                       className="h-80 w-auto rounded-xl hidden lg:block"
                       alt="Left Side"
                     />
