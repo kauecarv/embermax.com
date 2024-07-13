@@ -1,7 +1,7 @@
-import { cn } from "@/lib/cn";
-import Marquee from "@/components/ui/marquee";
-import { TbShoppingCartStar } from "react-icons/tb";
 import { Reveal } from "@/components/motion/RevealScroll";
+import Marquee from "@/components/ui/marquee";
+import { cn } from "@/lib/cn";
+import { TbShoppingCartStar } from "react-icons/tb";
 
 const reviews = [
   {
@@ -90,7 +90,10 @@ export function ReviewsTemplate() {
               Sucesso Garantido.
             </h1>
             <p className="mb-8 mt-4 text-center text-md font-dmsans text-[#fff9] font-normal max-w-xl mx-auto ">
-              Todos e qualquer cliente que efetuarem <span className="text-red-500">alguma compra</span> em nossa loja, estará <span className="text-red-500">totalmente satisfeito</span> e seguro.
+              Todos e qualquer cliente que efetuarem{" "}
+              <span className="text-red-500">alguma compra</span> em nossa loja,
+              estará <span className="text-red-500">totalmente satisfeito</span>{" "}
+              e seguro.
             </p>
           </div>
         </Reveal>
@@ -111,7 +114,6 @@ export function ReviewsTemplate() {
             <div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l  from-black"></div>
           </div>
         </Reveal>
-
       </section>
     </>
   );
