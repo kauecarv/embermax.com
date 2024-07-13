@@ -1,8 +1,8 @@
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
+import "@/styles/globals.css";
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,16 +11,16 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  
   title: "Embermax — Contas Exclusivas de Valorant",
-  description: "Encontre as melhores contas de Valorant à venda na Embermax. Contas exclusivas, seguras e prontas para jogar!",
+  description:
+    "Encontre as melhores contas de Valorant à venda na Embermax. Contas exclusivas, seguras e prontas para jogar!",
   alternates: {
-    canonical: 'https://embermax.com'
+    canonical: "https://embermax.com",
   },
-  authors: [{ name: 'Embermax', url: "https://embermax.com" }],
+  authors: [{ name: "Embermax", url: "https://embermax.com" }],
   robots: {
     index: true,
-    follow: true
+    follow: true,
   },
   keywords: [
     "Embermax",
@@ -40,18 +40,18 @@ export const metadata: Metadata = {
     siteName: "Embermax",
     url: "https://embermax.com",
     locale: "pt_BR",
-    description: "Encontre as melhores contas de Valorant à venda na Embermax. Contas exclusivas, seguras e prontas para jogar!",
-    images: ["/banner/embermax.png"]
+    description:
+      "Encontre as melhores contas de Valorant à venda na Embermax. Contas exclusivas, seguras e prontas para jogar!",
+    images: ["/banner/embermax.png"],
   },
   twitter: {
     title: "Embermax — Contas Exclusivas de Valorant",
-    description: "Encontre as melhores contas de Valorant à venda na Embermax. Contas exclusivas, seguras e prontas para jogar!",
+    description:
+      "Encontre as melhores contas de Valorant à venda na Embermax. Contas exclusivas, seguras e prontas para jogar!",
     card: "summary_large_image",
     images: ["/banner/embermax.png"],
   },
 };
-
-
 
 export default function RootLayout({
   children,
@@ -61,14 +61,13 @@ export default function RootLayout({
   return (
     <>
       <html lang="pt-br">
-      <head>
-      <link rel="icon" href="/favicon.png" sizes="any" />
-
-      </head>
+        <head>
+          <link rel="icon" href="/favicon.png" sizes="any" />
+        </head>
         <body className={inter.className}>
-          <Navbar></Navbar>
+          <Navbar />
           {children}
-          <Footer></Footer>
+          <Footer />
         </body>
       </html>
     </>
