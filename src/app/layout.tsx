@@ -1,6 +1,6 @@
+import "@/app/globals.css";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
-import "@/styles/globals.css";
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 
