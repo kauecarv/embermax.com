@@ -1,6 +1,8 @@
 import "@/app/globals.css";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import { queryClient } from "@/services/queryClient";
+import { QueryClientProvider } from "@tanstack/react-query";
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 
@@ -66,7 +68,9 @@ export default function RootLayout({
         </head>
         <body className={inter.className}>
           <Navbar />
-          {children}
+          <QueryClientProvider client={queryClient}>
+            {children}
+          </QueryClientProvider>
           <Footer />
         </body>
       </html>

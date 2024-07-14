@@ -1,14 +1,13 @@
 "use client";
 
 import Link from "next/link";
-import { FaCartShopping } from "react-icons/fa6";
-import { TbLogin2, TbLogout2, TbLayoutGridFilled } from "react-icons/tb";
-import { MdAdminPanelSettings, MdViewCarousel } from "react-icons/md";
 import { FaFire } from "react-icons/fa";
+import { FaCartShopping } from "react-icons/fa6";
+import { MdAdminPanelSettings, MdViewCarousel } from "react-icons/md";
+import { TbLayoutGridFilled, TbLogin2 } from "react-icons/tb";
 
-
-import DropdownNav from "./ui/Dropdown";
-import Tooltip from "./ui/Tooltip";
+import DropdownNav from "@/components/ui/Dropdown";
+import Tooltip from "@/components/ui/Tooltip";
 
 const contaAdmin = true;
 const contaLogada = true;
@@ -17,7 +16,7 @@ const Navbar = () => {
   const navLinks = [
     {
       name: "Ver Contas",
-      href: "/categorias",
+      href: "/categories",
     },
     {
       name: "Avaliações",
@@ -65,7 +64,6 @@ const Navbar = () => {
                     {link.name === "Ver Contas" && (
                       <MdViewCarousel className="ml-2 text-sm" />
                     )}
-                    
                   </Link>
                   {/* Adiciona ícone para cada li */}
                 </li>
@@ -93,16 +91,14 @@ const Navbar = () => {
 
                   {contaAdmin ? (
                     <>
-                        <Tooltip text="Acesse o Painel de Controle">
+                      <Tooltip text="Acesse o Painel de Controle">
                         <Link
-                        href="/"
-                        className="flex items-center gap-2 transition-all duration-300 hover:-translate-y-1"
-                      >
-                        <MdAdminPanelSettings className="text-red-500 text-3xl" />
-                      </Link>
-                  </Tooltip>
-
-                    
+                          href="/"
+                          className="flex items-center gap-2 transition-all duration-300 hover:-translate-y-1"
+                        >
+                          <MdAdminPanelSettings className="text-red-500 text-3xl" />
+                        </Link>
+                      </Tooltip>
                     </>
                   ) : null}
 

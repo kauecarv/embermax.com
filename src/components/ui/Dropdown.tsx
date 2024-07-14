@@ -1,11 +1,10 @@
-import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
-import { PiUserCircleDashedFill } from "react-icons/pi";
-import { IoMdArrowDropdown } from "react-icons/io";
-import { RiUserSearchLine } from "react-icons/ri";
+import { useEffect, useRef, useState } from "react";
 import { BiWallet } from "react-icons/bi";
 import { CgLogOut } from "react-icons/cg";
-
+import { IoMdArrowDropdown } from "react-icons/io";
+import { PiUserCircleDashedFill } from "react-icons/pi";
+import { RiUserSearchLine } from "react-icons/ri";
 
 const DropdownNav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +15,10 @@ const DropdownNav = () => {
   };
 
   const handleClickOutside = (event: MouseEvent) => {
-    if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+    if (
+      dropdownRef.current &&
+      !dropdownRef.current.contains(event.target as Node)
+    ) {
       setIsOpen(false);
     }
   };
@@ -53,25 +55,25 @@ const DropdownNav = () => {
             aria-labelledby="options-menu"
           >
             <Link
-              href="/conta"
+              href="/account"
               className="flex items-center gap-3 font-dmsans w-48 font-bold px-4 py-3 rounded-xl  text-md text-white transition duration-300 hover:bg-[#171717] hover:scale-105 group"
               role="menuitem"
             >
-              <RiUserSearchLine className="text-red-500 text-2xl"/> Minha Conta
+              <RiUserSearchLine className="text-red-500 text-2xl" /> Minha Conta
             </Link>
             <Link
-              href="/conta/pedidos"
-          className="flex items-center gap-3 font-dmsans w-48 font-bold px-4 py-3 rounded-xl  text-md text-white transition duration-300 hover:bg-[#171717] hover:scale-105 group"
+              href="/account/orders"
+              className="flex items-center gap-3 font-dmsans w-48 font-bold px-4 py-3 rounded-xl  text-md text-white transition duration-300 hover:bg-[#171717] hover:scale-105 group"
               role="menuitem"
             >
-              <BiWallet className="text-red-500 text-2xl"/> Meus Pedidos
+              <BiWallet className="text-red-500 text-2xl" /> Meus Pedidos
             </Link>
             <Link
-              href="/meus-pedidos"
-            className="flex items-center gap-3 font-dmsans w-48 font-bold px-4 py-3 rounded-xl  text-md text-white transition duration-300 hover:bg-[#171717] hover:scale-105 group"
+              href="/account/logout"
+              className="flex items-center gap-3 font-dmsans w-48 font-bold px-4 py-3 rounded-xl  text-md text-white transition duration-300 hover:bg-[#171717] hover:scale-105 group"
               role="menuitem"
             >
-              <CgLogOut className="text-red-500 text-2xl"/> Sair da Conta
+              <CgLogOut className="text-red-500 text-2xl" /> Sair da Conta
             </Link>
           </div>
         </div>

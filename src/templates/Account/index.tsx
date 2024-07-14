@@ -15,13 +15,13 @@ export const AccountTemplate = () => {
             </h2>
 
             <a
-              href="/conta"
+              href="/account"
               className="flex items-center px-4 py-2.5 font-semibold justify-between bg-[#171717]  text-white border border-[#222] rounded-full font-dmsans"
             >
               Minhas Informações <FaInfo className="text-white" />
             </a>
             <a
-              href="/conta/pedidos"
+              href="/account/orders"
               className="flex items-center text-white bg-transparent justify-between px-4 py-2.5 font-semibold font-dmsans transition duration-300 hover:bg-[#121212] rounded-full"
             >
               Meus Pedidos <TbShoppingCartSearch className="text-white" />
